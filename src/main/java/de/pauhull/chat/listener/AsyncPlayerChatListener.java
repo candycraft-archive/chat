@@ -37,7 +37,7 @@ public class AsyncPlayerChatListener implements Listener {
             PermissionGroup group = getHighestPermissionGroup(player.getName());
             displayName = ChatColor.translateAlternateColorCodes('&', group.getPrefix() + player.getName() + group.getSuffix());
         } else {
-            displayName = "§7" + player.getName();
+            displayName = "§a" + player.getName();
         }
 
         message = message.replace("%", "%%");
